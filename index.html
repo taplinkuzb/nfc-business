@@ -4,64 +4,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NFC Business — Умные NFC решения</title>
+<title>NFC BUSINESS — Умные NFC-решения для бизнеса</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#080d18;color:white}
-header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #263044}
-.logo{font-size:25px;font-weight:bold;color:#61e5bd}
-nav a{color:white;text-decoration:none;margin-left:20px;font-size:14px}
-.hero{text-align:center;padding:100px 20px 80px;background:radial-gradient(circle at top,#193d4a,#080d18 65%)}
-.hero h1{font-size:clamp(36px,6vw,65px);margin-bottom:20px}
-.hero h1 span{color:#61e5bd}
-.hero p{color:#b6c1d2;font-size:18px;line-height:1.6;max-width:650px;margin:auto}
-.btn{display:inline-block;background:#61e5bd;color:#07121a;padding:16px 28px;border-radius:10px;text-decoration:none;font-weight:bold;margin-top:30px}
-section{padding:65px 7%;text-align:center}
-h2{font-size:34px;margin-bottom:15px}
-.sub{color:#9ba9bd;margin-bottom:35px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:30px}
-.card{background:#121c2d;border:1px solid #29384c;border-radius:18px;padding:30px 22px;text-align:left}
-.card h3{font-size:23px;margin-bottom:15px;color:#61e5bd}
-.price{font-size:29px;font-weight:bold;margin:18px 0}
-.card p{color:#b6c1d2;line-height:1.8}
-.card a{display:block;text-align:center;background:#61e5bd;color:#07121a;padding:13px;border-radius:9px;text-decoration:none;font-weight:bold;margin-top:25px}
-.feature{font-size:40px;margin-bottom:18px}
-footer{text-align:center;padding:35px;color:#91a0b5;border-top:1px solid #263044}
+:root{--bg:#080d12;--panel:#111a22;--green:#20e0a0;--text:#f4f7f8;--muted:#9eabb5}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{padding:22px 7%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff14}
+.logo{font-size:23px;font-weight:800;letter-spacing:1px}
+.logo span{color:var(--green)}
+nav{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+.hero{padding:90px 7% 75px;text-align:center;background:radial-gradient(ellipse at top,#12352d 0%,transparent 65%)}
+.tag{display:inline-block;border:1px solid #20e0a055;color:var(--green);padding:7px 15px;border-radius:30px;font-size:13px}
+h1{font-size:clamp(36px,6vw,66px);line-height:1.1;max-width:850px;margin:25px auto}
+h1 span{color:var(--green)}
+.hero p{color:var(--muted);max-width:600px;margin:0 auto 30px;font-size:17px}
+.btn{display:inline-block;background:var(--green);color:#06130f;padding:14px 25px;border-radius:10px;font-weight:bold}
+.btn.outline{background:transparent;color:var(--green);border:1px solid var(--green);margin-left:8px}
+section{padding:65px 7%}
+.section-title{text-align:center;font-size:34px;margin:0 0 12px}
+.section-desc{text-align:center;color:var(--muted);margin:0 auto 38px;max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--panel);border:1px solid #ffffff12;border-radius:18px;padding:26px}
+.card h3{margin-top:0;font-size:21px}
+.card p,.muted{color:var(--muted)}
+.price{font-size:30px;font-weight:bold;color:var(--green);margin:15px 0}
+.price small{font-size:13px;color:var(--muted);font-weight:normal}
+ul{padding-left:20px;color:var(--muted)}
+li{margin:9px 0}
+.feature{font-size:35px;margin-bottom:12px}
+.plan{position:relative}
+.plan.featured{border-color:var(--green);box-shadow:0 0 30px #20e0a018}
+.plan .btn{display:block;text-align:center;margin-top:20px}
+.toggle{text-align:center;margin:25px 0 35px}
+.toggle button{background:#17232c;border:1px solid #ffffff20;color:white;padding:10px 18px;cursor:pointer}
+.toggle button.active{background:var(--green);color:#06130f}
+footer{padding:35px 7%;border-top:1px solid #ffffff18;text-align:center;color:var(--muted)}
+@media(max-width:650px){nav{display:none}.hero{padding-top:65px}.btn.outline{margin:12px 0 0}}
 </style>
 </head>
 <body>
 <header>
-<div class="logo">NFC BUSINESS</div>
-<nav><a href="#products">Карты</a><a href="#plans">Тарифы</a><a href="#contact">Контакты</a></nav>
+<div class="logo">NFC <span>BUSINESS</span></div>
+<nav><a href="#products">Продукты</a><a href="#plans">Тарифы</a><a href="#how">Как работает</a><a href="#contact">Контакты</a></nav>
 </header>
+
 <div class="hero">
-<h1>Ваш бизнес.<br><span>Умнее с NFC.</span></h1>
-<p>Современные NFC-карты для бизнеса. Получайте отзывы клиентов, делитесь контактами и развивайте свой бренд одним касанием.</p>
-<a class="btn" href="#products">Выбрать NFC-карту</a>
+<div class="tag">ТЕХНОЛОГИИ ДЛЯ СОВРЕМЕННОГО БИЗНЕСА</div>
+<h1>Ваш бизнес становится ближе <span>одним касанием</span></h1>
+<p>Умные NFC-карты и таблички для отзывов, контактов и продвижения вашего заведения. Клиенту достаточно приложить смартфон.</p>
+<a class="btn" href="https://t.me/taplinkuzb">Заказать в Telegram</a>
+<a class="btn outline" href="#products">Посмотреть продукты</a>
 </div>
+
 <section id="products">
-<h2>Наши NFC-решения</h2>
-<p class="sub">Технологии, которые работают на ваш бизнес</p>
-<div class="cards">
-<div class="card"><div class="feature">📲</div><h3>NFC Review</h3><p>Карта для получения отзывов клиентов в Google Maps одним касанием.</p></div>
-<div class="card"><div class="feature">💼</div><h3>NFC Business</h3><p>Цифровая визитка с контактами, социальными сетями и информацией о компании.</p></div>
-<div class="card"><div class="feature">⭐</div><h3>NFC Premium</h3><p>Индивидуальная страница компании с современным дизайном и возможностями настройки.</p></div>
+<h2 class="section-title">Наши продукты</h2>
+<p class="section-desc">Простые решения, которые помогают вашему бизнесу быть заметнее.</p>
+<div class="grid">
+<div class="card"><div class="feature">⭐</div><h3>NFC Review</h3><p>Табличка для быстрого перехода к отзывам о вашем заведении в Google.</p></div>
+<div class="card"><div class="feature">📲</div><h3>NFC Business</h3><p>Умная визитка с контактами, социальными сетями и ссылками вашего бизнеса.</p></div>
+<div class="card"><div class="feature">💎</div><h3>NFC Premium</h3><p>Премиальное решение с индивидуальным оформлением для вашего бренда.</p></div>
+</div>
+<div class="card" style="text-align:center;margin-top:25px">
+<p>Стоимость изготовления NFC-карты или таблички</p>
+<div class="price">250 000 сум <small> / разовая оплата</small></div>
+<a class="btn" href="https://t.me/taplinkuzb">Заказать</a>
 </div>
 </section>
-<section id="plans">
-<h2>Тарифы обслуживания</h2>
-<p class="sub">Выберите подходящий уровень обслуживания</p>
-<div class="cards">
-<div class="card"><h3>Базовый</h3><div class="price">Basic</div><p>✓ Готовая страница<br>✓ Основная информация<br>✓ Ссылка на отзывы</p><a href="#contact">Выбрать</a></div>
-<div class="card"><h3>Стандарт</h3><div class="price">Standard</div><p>✓ Всё из Basic<br>✓ Индивидуальный дизайн<br>✓ Настройка информации</p><a href="#contact">Выбрать</a></div>
-<div class="card"><h3>Премиум</h3><div class="price">Premium</div><p>✓ Всё из Standard<br>✓ Расширенная страница<br>✓ Приоритетная поддержка</p><a href="#contact">Выбрать</a></div>
+
+<section id="plans" style="background:#0c131a">
+<h2 class="section-title">Тарифы обслуживания</h2>
+<p class="section-desc">Выберите подходящий тариф. Оплата — ежемесячно или ежегодно.</p>
+<div class="toggle">
+<button id="month" class="active" onclick="setPeriod('month')">За месяц</button>
+<button id="year" onclick="setPeriod('year')">За год</button>
+</div>
+<div class="grid">
+<div class="card plan">
+<h3>Базовый</h3><p class="muted">Всё самое необходимое</p>
+<div class="price" data-month="29 000" data-year="348 000">29 000 сум<small> / месяц</small></div>
+<ul><li>Персональная страница заведения</li><li>Название и адрес</li><li>Кнопка Google Maps</li><li>Контактный телефон</li><li>Стандартный дизайн</li><li>Изменения через Telegram</li></ul>
+<a class="btn" href="https://t.me/taplinkuzb">Выбрать тариф</a>
+</div>
+<div class="card plan featured">
+<h3>Стандарт</h3><p class="muted">Больше возможностей</p>
+<div class="price" data-month="49 000" data-year="588 000">49 000 сум<small> / месяц</small></div>
+<ul><li>Всё из тарифа Базовый</li><li>Индивидуальные цвета</li><li>Фотографии заведения</li><li>Instagram и Telegram</li><li>Меню или список услуг</li><li>Несколько способов связи</li><li>Изменения через Telegram</li></ul>
+<a class="btn" href="https://t.me/taplinkuzb">Выбрать тариф</a>
+</div>
+<div class="card plan">
+<h3>Премиум</h3><p class="muted">Максимум возможностей</p>
+<div class="price" data-month="79 000" data-year="948 000">79 000 сум<small> / месяц</small></div>
+<ul><li>Всё из тарифа Стандарт</li><li>Уникальный дизайн</li><li>Фотогалерея</li><li>Подробное описание бизнеса</li><li>Акции и специальные предложения</li><li>Расширенная статистика посещений</li><li>Приоритетная поддержка</li></ul>
+<a class="btn" href="https://t.me/taplinkuzb">Выбрать тариф</a>
+</div>
+</div>
+<p class="section-desc" style="margin-top:25px">Если обслуживание не продлевается, страница остаётся доступной, но её редактирование приостанавливается.</p>
+</section>
+
+<section id="how">
+<h2 class="section-title">Как это работает?</h2>
+<p class="section-desc">Всего три простых шага до современной страницы вашего бизнеса.</p>
+<div class="grid">
+<div class="card"><div class="feature">01</div><h3>Выбираете продукт</h3><p>Связываетесь с нами и выбираете подходящую NFC-карту или табличку.</p></div>
+<div class="card"><div class="feature">02</div><h3>Мы создаём страницу</h3><p>Подготавливаем индивидуальную страницу с информацией о вашем бизнесе.</p></div>
+<div class="card"><div class="feature">03</div><h3>Касание — и готово</h3><p>Клиенты прикладывают телефон к NFC-метке и открывают вашу страницу.</p></div>
 </div>
 </section>
-<section id="contact">
-<h2>Закажите NFC-карту</h2>
-<p class="sub">Свяжитесь с нами для оформления заказа</p>
-<a class="btn" href="https://t.me/" target="_blank">Написать в Telegram</a>
+
+<section id="contact" style="text-align:center">
+<h2 class="section-title">Готовы подключить свой бизнес?</h2>
+<p class="section-desc">Напишите нам в Telegram. Ответим на вопросы и поможем выбрать решение.</p>
+<a class="btn" href="https://t.me/taplinkuzb">Написать нам в Telegram</a>
 </section>
-<footer>© 2026 NFC BUSINESS. Все права защищены.</footer>
+
+<footer>© 2026 NFC BUSINESS · Умные решения для вашего бизнеса</footer>
+<script>
+function setPeriod(period){
+document.querySelectorAll('.price[data-month]').forEach(el=>{
+el.innerHTML=(period==='month'?el.dataset.month:el.dataset.year)+' сум<small> / '+(period==='month'?'месяц':'год')+'</small>';
+});
+document.getElementById('month').classList.toggle('active',period==='month');
+document.getElementById('year').classList.toggle('active',period==='year');
+}
+</script>
 </body>
 </html>
