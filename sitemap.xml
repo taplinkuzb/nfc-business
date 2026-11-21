@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://taplinkuzb.github.io/nfc-business/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <image:image><image:loc>https://taplinkuzb.github.io/nfc-business/nfc_google_reviews.png</image:loc><image:title>NFC Google Reviews</image:title></image:image>
+    <image:image><image:loc>https://taplinkuzb.github.io/nfc-business/nfc_personal_card.png</image:loc><image:title>Персональная NFC-карта</image:title></image:image>
+    <image:image><image:loc>https://taplinkuzb.github.io/nfc-business/nfc_instagram.png</image:loc><image:title>NFC Instagram</image:title></image:image>
+    <image:image><image:loc>https://taplinkuzb.github.io/nfc-business/nfc_menu.png</image:loc><image:title>NFC Menu без QR-кода</image:title></image:image>
+  </url>
+</urlset>
