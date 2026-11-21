@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://taplinkuzb.github.io/nfc-business/sitemap.xml
