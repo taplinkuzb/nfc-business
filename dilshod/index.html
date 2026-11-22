@@ -7,23 +7,23 @@
 <title>Шавкатов Дильшод — Digital Card</title>
 <style>
 *{box-sizing:border-box}
-:root{--pink:#ff25c8;--violet:#9c42ff;--cyan:#39eaff}
-body{margin:0;min-height:100svh;display:grid;place-items:center;overflow-x:hidden;padding:28px 16px;background:#05040c;color:#fff;font-family:Arial,sans-serif;position:relative}
-body:before{content:"";position:fixed;inset:-30%;z-index:-2;background:radial-gradient(ellipse at 20% 25%,#64105c88,transparent 34%),radial-gradient(ellipse at 78% 30%,#25118d99,transparent 35%),radial-gradient(ellipse at 50% 85%,#0b627588,transparent 38%),linear-gradient(135deg,#05040c,#10091d 55%,#05040c);animation:aurora 13s ease-in-out infinite alternate}
-body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.19;background-image:linear-gradient(#a94cff22 1px,transparent 1px),linear-gradient(90deg,#a94cff22 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 78%,transparent)}
+:root{--pink:#c5a879;--violet:#71849a;--cyan:#d8c7a3}
+body{margin:0;min-height:100svh;display:grid;place-items:center;overflow-x:hidden;padding:28px 16px;background:#090b10;color:#fff;font-family:Arial,sans-serif;position:relative}
+body:before{content:"";position:fixed;inset:-25%;z-index:-2;background:radial-gradient(ellipse at 18% 22%,#9b795333,transparent 34%),radial-gradient(ellipse at 82% 30%,#52677b44,transparent 36%),radial-gradient(ellipse at 50% 90%,#8c6b4533,transparent 42%),repeating-linear-gradient(132deg,transparent 0 70px,#ffffff06 71px,#ffffff06 72px,transparent 73px 145px),linear-gradient(135deg,#090b10,#171a20 52%,#080a0e);animation:aurora 22s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.19;background-image:radial-gradient(#d8c7a322 .7px,transparent .8px);background-size:5px 5px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
 @keyframes aurora{0%{transform:translate3d(-2%,0,0) rotate(0deg) scale(1)}100%{transform:translate3d(2%,-2%,0) rotate(5deg) scale(1.08)}}
 .orb{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(65px);opacity:.22;z-index:-1;pointer-events:none;animation:float 9s ease-in-out infinite alternate}
-.orb.one{background:#ff16c8;top:4%;left:-100px}.orb.two{background:#643cff;bottom:0;right:-110px;animation-delay:-4s}
+.orb.one{background:#b08c5c;top:4%;left:-100px}.orb.two{background:#52677b;bottom:0;right:-110px;animation-delay:-4s}
 @keyframes float{to{transform:translate(55px,35px) scale(1.25)}}
-.card{width:min(100%,390px);padding:32px 25px 27px;text-align:center;position:relative;isolation:isolate;background:linear-gradient(155deg,rgba(13,10,31,.96),rgba(5,7,22,.96));border:1px solid #ff36ce;border-radius:27px;box-shadow:0 0 14px #ff26bd88,0 0 55px #a9008d55,inset 0 0 28px #40104b66;backdrop-filter:blur(14px)}
-.card:before{content:"";position:absolute;inset:-2px;border-radius:29px;padding:1px;background:linear-gradient(135deg,#ff2bc8,#743dff,#39eaff,#ff2bc8);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.75}
-.avatar{width:174px;height:174px;margin:0 auto 23px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ff24c8,#7d35ff,#36eaff,#ff24c8);box-shadow:0 0 15px #ff22c5,0 0 38px #e000a766;animation:pulse 3s ease-in-out infinite}
+.card{width:min(100%,390px);padding:32px 25px 27px;text-align:center;position:relative;isolation:isolate;background:linear-gradient(155deg,rgba(13,10,31,.96),rgba(5,7,22,.96));border:1px solid #8d795d;border-radius:27px;box-shadow:0 18px 60px #000a,inset 0 0 28px #a58a5a12;backdrop-filter:blur(14px)}
+.card:before{content:"";position:absolute;inset:-2px;border-radius:29px;padding:1px;background:linear-gradient(135deg,#c7ad7b,#52677b,#e0d1b2,#8b7450);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.38}
+.avatar{width:174px;height:174px;margin:0 auto 23px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ff24c8,#7d35ff,#36eaff,#ff24c8);box-shadow:0 8px 30px #000b;animation:pulse 3s ease-in-out infinite}
 .avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;border:2px solid #10091d}
-@keyframes pulse{50%{box-shadow:0 0 23px #ff22c5,0 0 55px #9d25ff99}}
-h1{font-size:27px;margin:0;color:#ff55d0;text-shadow:0 0 7px #ff28bf,0 0 20px #ed00ae;letter-spacing:.2px}
+@keyframes pulse{50%{box-shadow:0 10px 34px #000c}}
+h1{font-size:27px;margin:0;color:#e4d3b2;text-shadow:0 2px 16px #b79a6844;letter-spacing:.2px}
 .sub{margin:9px 0 27px;color:#c9b9d5;font-size:11px;letter-spacing:3px;text-transform:uppercase}
-.links{display:grid;gap:13px}.link{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 14px;border:1px solid #ff2ac2;border-radius:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:2px;background:linear-gradient(100deg,#170d2b,#100c23);box-shadow:0 0 9px #ff25bf77,inset 0 0 12px #4a124555;transition:transform .2s,box-shadow .2s,background .2s}.link:hover{transform:translateY(-3px);background:#32102e;box-shadow:0 0 18px #ff25bf,0 0 32px #9a1bff}.link span{font-size:19px;letter-spacing:0;color:#ff6bd8;text-shadow:0 0 9px #ff2ac2}
-.save{margin-top:20px;border:0;background:linear-gradient(90deg,#ff20b9,#a52bff);color:white;border-radius:14px;padding:15px;width:100%;font-weight:700;letter-spacing:1px;box-shadow:0 0 18px #d51ab6;cursor:pointer;transition:transform .2s}.save:hover{transform:translateY(-2px)}
+.links{display:grid;gap:13px}.link{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 14px;border:1px solid #76644b;border-radius:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:2px;background:linear-gradient(100deg,#170d2b,#100c23);box-shadow:0 6px 20px #0008,inset 0 0 12px #bda47712;transition:transform .2s,box-shadow .2s,background .2s}.link:hover{transform:translateY(-3px);background:#272a2d;box-shadow:0 8px 22px #000b}.link span{font-size:19px;letter-spacing:0;color:#ff6bd8;text-shadow:0 0 9px #ff2ac2}
+.save{margin-top:20px;border:0;background:linear-gradient(90deg,#927b57,#c1a77b);color:white;border-radius:14px;padding:15px;width:100%;font-weight:700;letter-spacing:1px;box-shadow:0 8px 24px #0009;cursor:pointer;transition:transform .2s}.save:hover{transform:translateY(-2px)}
 .note{margin-top:20px;color:#9483a8;font-size:10px;letter-spacing:3px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
