@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080510"><title>Дильшод Шавкатов — Digital Card</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;display:grid;place-items:center;padding:24px 16px;background:radial-gradient(ellipse at 50% 12%,#4c0b45 0%,#180b27 34%,#070711 75%);color:#fff;font-family:Arial,sans-serif}
+.card{width:min(100%,390px);padding:34px 25px 30px;text-align:center;background:rgba(3,7,29,.94);border:1px solid #ff26bd;border-radius:25px;box-shadow:0 0 12px #ff26bd,0 0 42px #a9008d, inset 0 0 25px #250b34}
+.avatar{width:154px;height:154px;margin:0 auto 22px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ff24c8,#7d35ff,#ff24c8);box-shadow:0 0 13px #ff22c5,0 0 32px #e000a7}
+.avatar-inner{height:100%;width:100%;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#342047,#09091a 70%);font-size:58px}
+h1{font-size:27px;margin:0;color:#ff42c8;text-shadow:0 0 7px #ff28bf,0 0 20px #ed00ae;letter-spacing:.3px}
+.sub{margin:9px 0 27px;color:#c9b9d5;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.links{display:grid;gap:13px}.link{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 14px;border:1.5px solid #ff2ac2;border-radius:14px;color:#fff;text-decoration:none;font-size:14px;font-weight:700;letter-spacing:2px;background:#120c25;box-shadow:0 0 8px #ff25bf,inset 0 0 10px #4a1245;transition:.2s}.link:hover{transform:translateY(-2px);background:#32102e;box-shadow:0 0 18px #ff25bf,0 0 32px #9a1bff}
+.link span{font-size:19px;letter-spacing:0}.save{margin-top:20px;border:0;background:linear-gradient(90deg,#ff20b9,#a52bff);color:white;border-radius:14px;padding:15px;width:100%;font-weight:700;letter-spacing:1px;box-shadow:0 0 18px #d51ab6;cursor:pointer}
+.note{margin-top:20px;color:#766b87;font-size:10px;letter-spacing:3px}
+</style></head><body><main class="card">
+<div class="avatar"><div class="avatar-inner">👤</div></div>
+<h1>Шавкатов Дильшод</h1><p class="sub">Personal digital card</p>
+<nav class="links">
+<a class="link" href="https://t.me/shavkatovv888" target="_blank" rel="noopener"><span>➤</span> TELEGRAM</a>
+<a class="link" href="https://www.instagram.com/shavkatovv_888/" target="_blank" rel="noopener"><span>◎</span> INSTAGRAM</a>
+<a class="link" href="https://www.tiktok.com/@shavkatovv888" target="_blank" rel="noopener"><span>♪</span> TIKTOK</a>
+<a class="link" href="tel:+998903222110"><span>☎</span> +998 90 322 21 10</a>
+</nav>
+<button class="save" onclick="saveContact()">＋ СОХРАНИТЬ КОНТАКТ</button>
+<div class="note">TAP • CONNECT • SHARE</div></main>
+<script>
+function saveContact(){const v='BEGIN:VCARD\nVERSION:3.0\nN:Шавкатов;Дильшод;;;\nFN:Шавкатов Дильшод\nTEL;TYPE=CELL:+998903222110\nURL:https://t.me/shavkatovv888\nEND:VCARD';const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([v],{type:'text/vcard;charset=utf-8'}));a.download='Dilshod-Shavkatov.vcf';a.click();URL.revokeObjectURL(a.href)}
+</script></body></html>
