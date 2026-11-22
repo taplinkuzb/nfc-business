@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#07152d"/><stop offset="1" stop-color="#030711"/></linearGradient><linearGradient id="screen"><stop stop-color="#102a4b"/><stop offset="1" stop-color="#06101f"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<rect width="900" height="620" fill="url(#bg)"/><path d="M0 380H900V620H0Z" fill="#080f1d"/><path d="M0 175H900" stroke="#087cff" stroke-width="7" opacity=".75" filter="url(#glow)"/>
+<rect x="35" y="215" width="335" height="225" rx="12" fill="#07101d" stroke="#168cff" stroke-width="5"/><rect x="47" y="228" width="311" height="195" rx="5" fill="url(#screen)"/>
+<rect x="530" y="190" width="330" height="250" rx="12" fill="#07101d" stroke="#168cff" stroke-width="5"/><rect x="543" y="203" width="304" height="224" rx="5" fill="url(#screen)"/>
+<g stroke-linecap="round" stroke-width="5"><path d="M70 260h120m-120 24h170m-170 24h105m-105 24h145m-145 24h80m-80 24h180" stroke="#27a8ff"/><path d="M90 260h32m-32 48h70m-70 48h55" stroke="#72e5d2"/><path d="M570 238h180m-180 26h230m-230 26h125m-125 26h200m-200 26h155m-155 26h225m-225 26h100" stroke="#2a9dff"/><path d="M590 238h50m-50 52h65m-65 52h45" stroke="#d47cff"/></g>
+<path d="M200 440v55h500v-55" fill="#0b1728" stroke="#145ca4" stroke-width="5"/><rect x="320" y="475" width="260" height="18" rx="8" fill="#123b68"/><path d="M0 520H900" stroke="#087cff" stroke-width="5" opacity=".8" filter="url(#glow)"/>
+<g fill="none" stroke="#168cff" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"><path d="M390 80l-55 48 55 48M510 80l55 48-55 48M480 58l-60 180"/></g>
+<g fill="#a9d7ff" opacity=".65" font-family="monospace" font-size="18"><text x="62" y="205">DEVELOPER WORKSPACE</text><text x="558" y="178">CODE / BUILD / CREATE</text></g>
+<g fill="#102b49" stroke="#168cff" stroke-width="3"><rect x="760" y="455" width="70" height="42" rx="8"/><path d="M775 455v-25h40v25"/></g>
+</svg>
