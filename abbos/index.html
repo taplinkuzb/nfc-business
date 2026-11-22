@@ -10,7 +10,7 @@
 :root{color-scheme:dark;--bg:#08090d;--panel:#12151d;--line:#252a35;--muted:#a3a9b7;--accent:#28a8ff}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;padding:28px 16px;background:radial-gradient(ellipse at 50% 0%,#092b58 0%,#0a1427 38%,var(--bg) 78%);color:#f7f8fa;font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;display:flex;justify-content:center;align-items:center}
 main{width:100%;max-width:430px;text-align:center}.card{padding:34px 24px 28px;background:linear-gradient(160deg,#171b24,#101219);border:1px solid #173d70;border-radius:28px;box-shadow:0 24px 80px #000b,0 0 35px #087cff22}
-.avatar{width:116px;height:116px;margin:0 auto 22px;border-radius:50%;display:block;object-fit:cover;overflow:hidden;background:#101827;box-shadow:0 0 0 5px #168cff33,0 0 28px #168cff77;border:3px solid #299cff;border:4px solid #ffffff18;box-shadow:0 0 0 8px #b7f36b12}
+.hero{min-height:220px;margin:-34px -24px 24px;padding:48px 20px 28px;border-radius:27px 27px 18px 18px;background:#07152d url("programmer-bg.svg") center/cover no-repeat;box-shadow:inset 0 -35px 55px #050914}.avatar{width:124px;height:116px;margin:0 auto 22px;border-radius:50%;display:block;object-fit:cover;overflow:hidden;background:#101827;box-shadow:0 0 0 5px #168cff33,0 0 28px #168cff77;border:3px solid #299cff;border:4px solid #d9efff;box-shadow:0 0 0 8px #168cff55,0 0 32px #168cffaa}
 h1{font-size:25px;line-height:1.2;margin:0 0 9px;letter-spacing:-.5px}.role{color:var(--muted);margin:0 0 25px;font-size:14px}.brand{color:#36adff;font-weight:700}
 .actions{display:grid;gap:12px}.action{min-height:54px;padding:14px 18px;border:1px solid #174d91;border-radius:15px;background:linear-gradient(145deg,#121d31,#080e19);box-shadow:inset 0 0 18px #147cff12;color:#f7f8fa;text-decoration:none;display:flex;align-items:center;justify-content:center;gap:11px;font-weight:650;transition:.2s}.action.primary{background:linear-gradient(135deg,#137bff,#21b8ff);border-color:#259cff;color:#fff;box-shadow:0 0 22px #168cff66}.action:active{transform:scale(.985)}.icon{width:21px;height:21px;display:inline-grid;place-items:center;font-size:19px}
 .socials{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.social{min-height:52px}.note{margin:22px 0 0;color:#747d8c;font-size:12px}.footer{margin-top:18px;color:#8da9d2;font-size:12px;letter-spacing:2.5px;text-shadow:0 0 12px #168cff66}
@@ -19,7 +19,7 @@ h1{font-size:25px;line-height:1.2;margin:0 0 9px;letter-spacing:-.5px}.role{colo
 <body>
 <main>
 <section class="card" aria-label="Персональная визитка">
-<img class="avatar" src="abbos.jpg" alt="Фото Аббоса">
+<div class="hero"><img class="avatar" src="abbos.jpg" alt="Фото Аббоса"></div>
 <h1>Аббос Мирхонов<br>Садуллоевич</h1>
 <p class="role">Программист · <span class="brand">Taplinkuzb.uz</span></p>
 <div class="actions">
@@ -32,7 +32,7 @@ h1{font-size:25px;line-height:1.2;margin:0 0 9px;letter-spacing:-.5px}.role{colo
 </div>
 <p class="note">Нажмите «Добавить контакт», чтобы сохранить визитку в телефон.</p>
 </section>
-<div class="footer">TAPLINKUZB · DIGITAL CARD</div>
+<div class="footer">BUILD · AUTOMATE · INNOVATE</div>
 </main>
 </body>
 </html>
