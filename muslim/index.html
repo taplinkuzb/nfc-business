@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050505">
+<meta name="description" content="Персональная цифровая визитка Muslim Sadullayev">
+<title>Muslim Sadullayev — Digital Card</title>
+<style>
+*{box-sizing:border-box}
+:root{color-scheme:dark}
+html{min-height:100%;background:#050505}
+body{margin:0;min-height:100svh;display:grid;place-items:center;padding:28px 16px;background:radial-gradient(ellipse at 50% 0%,#202020 0%,#0b0b0b 42%,#030303 100%);color:#f5f5f5;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+.card{width:min(100%,390px);padding:34px 25px 27px;text-align:center;background:linear-gradient(160deg,#141414,#080808 58%,#101010);border:1px solid #303030;border-radius:26px;box-shadow:0 24px 80px #000,inset 0 1px 0 #ffffff0b}
+.avatar{width:164px;height:164px;margin:0 auto 24px;padding:4px;border-radius:50%;background:linear-gradient(145deg,#777,#292929 48%,#aaa);box-shadow:0 0 0 1px #ffffff20,0 12px 38px #000}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 38%;border-radius:50%;border:2px solid #090909;filter:grayscale(100%) contrast(1.08)}
+h1{font-size:27px;line-height:1.15;margin:0;color:#fff;font-weight:650;letter-spacing:-.7px}
+.sub{margin:10px 0 28px;color:#777;font-size:10px;letter-spacing:3.2px;text-transform:uppercase}
+.links{display:grid;gap:11px}
+.link{display:flex;align-items:center;gap:14px;min-height:57px;padding:13px 16px;border:1px solid #292929;border-radius:13px;color:#f1f1f1;text-decoration:none;font-size:12px;font-weight:650;letter-spacing:1.6px;background:linear-gradient(105deg,#171717,#0b0b0b);transition:border-color .2s,background .2s,transform .2s}
+.link:hover{border-color:#666;background:#1d1d1d;transform:translateY(-1px)}
+.link svg{width:21px;height:21px;flex:0 0 21px;stroke:#ddd;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.link .brand{fill:none;stroke:#ddd;stroke-width:1.7}
+.link .telegram{fill:#ddd;stroke:none}
+.save{margin-top:18px;width:100%;min-height:55px;border:1px solid #777;border-radius:13px;background:#e8e8e8;color:#080808;font-weight:750;font-size:12px;letter-spacing:1.5px;cursor:pointer;transition:background .2s,transform .2s}
+.save:hover{background:#fff;transform:translateY(-1px)}
+.note{margin-top:22px;color:#555;font-size:9px;letter-spacing:3.4px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="card">
+<div class="avatar"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABIMDRANCxIQDhAUExIVGywdGxgYGzYnKSAsQDlEQz85Pj1HUGZXR0thTT0+WXlaYWltcnNyRVV9hnxvhWZwcm7/2wBDARMUFBsXGzQdHTRuST5Jbm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm7/wAARCAC+AKADASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAAAgABAwQFBgf/xAA2EAACAQMCBAMGBAYDAQAAAAABAgADBBEhMQUSQVEiYXEGExQjMoFCUqGxM0ORwdHhJHLxgv/EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAaEQEBAQEBAQEAAAAAAAAAAAAAARECMSFB/9oADAMBAAIRAxEAPwDqcxZ0ggx8zm0fMWYOYsxRZJEWYIydosyQgYmYwMxFtJJme0BIsdPzTmCT3nTcfP8AwPvOaLZBM1AjctiASdob7SMk7yJiTI3OkPPlI3MkiJOkfmPWLII22ggxBHXaCY5gsdN4EtAPOMx0jZiJ7yT1LmiDaQMxZ0mUPMRMAHSLMkMMVOhxG3MHMFqqU/rYCQGYxO8p1eIoM8qk+sgfijD+WP6yxG9oNbD7ic2FO02729W9tjS5eRs53mU1Bk10xNRK7AyMg4llgNsD1kbYHaKV9cSJxpLLYzoMCQsNDJIBpmCJIwA1OkjZ1G2pkDnaRuQN4izucKP6R1t+tQ4kdRFydFEcUnbU6esl5kTRBAZyesk9OzHzBzFmcyfMWY0brFIby7FtT01dtAJlc71H5nYnPcyO/rmrfuCdEPKJJQUsnh3E1IBBQdMQXQqcnbprLlGgx0JzkdI72535ZrAzDTOduuMiAynBzqP2l+sj45QAB6SlVFQ6ZwB1glV1X/yVKgGSBLNQEHHUyKohGskrmRttDOmZCBUrNyqP8CSRqpqsR26x/dU1ODqZoVqNKytB4uao36n/AAJmk6xQy4AwokVRs7xQTjECAxRRdZJ6aSYsxos6zmRZijRZ1imA1IPxKup1Jcma9tbKFwdTM1QTxatqNGJmqjJlQTkLuAZv2jci9Z2ykAy09opXAAg2lRMeAYXsZM9ZVUnMRrHu7VlGcad5lXAA2mte3CksBsd8GZdwV3X9YWGVUSij1sPoMdZQruAeXzkt1VI2Oc9pnlyWJPeLOfQsNGg0M+IjprCfIzAtiDzg9pEFUs5LElj1zIjJmNMA5LH0Ejd1H8PP/wBCSAQR0gkR+Y43gEwJyPSR9YRMGSemCN1jZizrMEUfQDLEADqYEh4gC1lVA6DMkq0q6Ubm4cUkfDYLEZzLdC/p1XPPSUhvKZXD2CK2e+ZcpW7VA7omU75j7T42Eq2rLo70ifuJWvGrU/xc6HZ12MoNzprjI7HeS0LwhShAam26mO2DJfFZ6tRadZjopXBzM53D4AqHM1r62Z7ao9DNRMbdRMtqSA5wM942iRTuQRTOZUG0vVxztyjrILkY5TgDORKKxXc7+kC3Pib0jk7yOgfE3pEAJyYDbmOTtBJ1MkXSMY+4gneBDmIwuXTTEEb6yT0mPAzFzaTBGImAYEHYiMDHkGZXW2pvkaKNwN2MiW9JbJIA6CW+IUaLKGc8jZ3G5lI07dz4F5RttmWNatLeAjFRA69pNb2/D6r5SrVoMfwscrKHwy4+VUAPmSBJPhnCZLAnygWpcqltR5aNYM/UTCueYNluu8MMwcBidJLUUMMHUGU+FnovMxOdpm3NTmrHByF0EmualWjVqUs4HpKZ8p0jFpEyOkfGfSE28ipnDxZM/wDeDnMdjvBBkj50jExdIxgSzGiikno3WKNmLMwRjePnvAzETIIb+0+JpgqcOucdjKdrw96lNi9Qo6tjGMiaFzcrZUhUqjORlVPX1kfDK/xFF3LAsXJOJuCs66t61oAzkMhOMrCJqUwATgnpC4pfBqgo0iCFOWPn2lf3pqHLbzPUb5SjxHJ0MNGMBNZIgxvMtKnEbM3FP3lMfMUbdxMMgnM6gsOkoX3Dffn3lDAc/UDoD5zXN/GbP1h511kSnxS5c2F1bDmq0iFH4hqJRB8U2wZzqYIjtuYMkLOkaKKBKIDJjZiB1knoYMno29WtjkQ47nQS3Z2KoA9cZbop2EvaMuh08pnEpUuHID85iT2XQSS4NtYW7VTTXQaZ1yZZGNz06zlOO35u7o00Pyqeg8zFT6o31y99cGpVOQTtIalRmctTZqZ2BQ4k1Ojz0XqfllYbmDeAJI9ZNTbIkZQNvHCBR4TgyC2reckFQ95Q98VODoZJTqFhnMDq6upzJOYCVVfEleovLCmJqdcc/Ieu2Yb2dtcnFShTbPXlA/WUC2WBBwRNWxPvseW8Yz1FC69kaFxTLWNV6dT8r6qfvuJyd1a1rO4ahcUylRdwf7T1RcimMDfYTB9qbOhc22HJNwniUgfT5TbDhekGPmNIlFFEJB64amGg83uqocHwN9Q7echRuamnmsf5bp84+EdOpgjXt8DQNOkCC2mfKczeU+SvtoRNqu4ZyAMAbDtI721DW9q2NefX0P8A5Ktc+q1O2KWIUjVhkzIdCrnM6ZiCuJlcRt8eMCY10xmxQsaxcpiAMARqMyBVcVPlEjJ26GWSuksWNAFy5Gi7esWajUMrcraGHiS3a4CuOhwfSApyIUwGJbsbr4a4Bf8AhnR/SVyI2MzJ9dVXr8igp4nb6AJClvyKWfxVG+omUeCXQL+4qavj5ZPbtNaoQg8WrdhNy652Y8345Z/BcUqoowjHnX0Mz51fthbGpSp3CrrTYhsflP8AucpNI0UUUg9SpnlVcbDSRXGVfTbpEh+WMdIVcg0Cx7SStSU1KwAGddZo3NMGgyj8Oo+0r8MwSz6eLaXKu/kYLWUTIbgh6RBkldSjsvaVXc6zm7KBTDRiJI25gmKAVl61TloDz1lPeaKjlUDoBNRjoNVQ1MIRvvKCg06jU23Uy/TBeoWO0r8Qp4K1V6aGVEoN42IkOYREw6GBKsGUkMDkEdJvWV6l1S5jTJqDRwD1mCRLXC6hp3qgHR/Cw7ylZs1r3NKkaNT3tMsHUgoeonmDDDEYIwes9Grh0bOpXv2nM+0XDAc3lAa/zFH7zo5ufjRRxrFPSKJJojO5j13AtWHWChwMdpFdseQDzkkVpXNGpg/Sd/KbK1BVp57b4nOVatOlrUYL+8vcPuwjAls03GARtiSWr1Nm+0oVFBmtWTNMrMl9yD0mLHTm/FKqvK0jMmr7yIwIrdOesOw1lxznwr95FZU8qzd9JLTXrNRi+jUcoxAqqKilTsRiSGRneLLNUlGKNupxJ1ORD4jbciU64G/hb+0gptpMWOkqUjSScPBN/S/7iR50lnhi5v6Xrn9Jk1uVKQZMGZVxQNMFXHMjaf6m0ykrgSO4pKaBBAJPSdXJ5jxG1+DvqtHoDlfQ7SsDOk9tLL3Fxb1wNHUqSPLUTmop6OjcwLd9Y1YApFR/hr6Rz9GJJQubSnUwalMPgaEjaKmAiBFGFAwB2ltn8BUiVDo8E1ba4LWfdl8MpXKctTPcQbas1KqMbNoRLd/T+Vz9jCtc+susNJBiWauqyuZl0X7deS3XuYW2kSHKKe4EZjNRypExqa89QCNJrQeMntECvKfvbdqfcYHrMGmcaHcTfrnEx72mKd2SNnHNj94Vrk6tpL3CNb+n6H9pnLL3C25b+l9x+kx+t3x0hPQSOsNVzqc7SZemNzHCqDkjJ7zo5KN9w+hf2b292PlsMhuqt0Inml/ZVeH3b29YeJdiNmHQietuOZcTlfbHhyVuG/EjAehqD3GdRJP/2Q==" alt="Фото Muslim Sadullayev"></div>
+<h1>Muslim Sadullayev</h1><p class="sub">Personal digital card</p>
+<nav class="links" aria-label="Контакты">
+<a class="link" href="tel:+998338062121"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.3-3 2-3Z"/></svg><span>+998 33 806 21 21</span></a>
+<a class="link" href="https://t.me/msadulaev7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="telegram" d="M21.5 3.2 18.3 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.6.6-1.2.6l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.7l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.2 2.8c.9-.3 1.7.2 1.3 1.4Z"/></svg><span>TELEGRAM</span></a>
+<a class="link" href="https://www.instagram.com/m.sadulaevvv?fqnt=MTVid3M2MnB0N3pqOQ==" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect class="brand" x="3" y="3" width="18" height="18" rx="5"/><circle class="brand" cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.7" r="1" fill="#ddd" stroke="none"/></svg><span>INSTAGRAM</span></a>
+</nav>
+<button class="save" type="button" onclick="saveContact()">СОХРАНИТЬ КОНТАКТ</button>
+<div class="note">TAP • CONNECT • SHARE</div>
+</main>
+<script>
+function saveContact(){const v='BEGIN:VCARD\nVERSION:3.0\nN:Sadullayev;Muslim;;;\nFN:Muslim Sadullayev\nTEL;TYPE=CELL:+998338062121\nURL:https://t.me/msadulaev7\nEND:VCARD';const a=document.createElement('a');const u=URL.createObjectURL(new Blob([v],{type:'text/vcard;charset=utf-8'}));a.href=u;a.download='Muslim-Sadullayev.vcf';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+</script>
+</body></html>
