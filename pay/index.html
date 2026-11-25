@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d14">
+<title>Taplink Pay — выбор способа оплаты</title>
+<meta name="description" content="Выберите удобный способ оплаты через Taplink Pay.">
+<link rel="canonical" href="https://taplinkuzb.uz/pay/">
+<style>
+:root{color-scheme:dark;--bg:#090d14;--panel:#141c27;--muted:#9ba8b8;--text:#f5f7fb;--line:#ffffff18}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 50% 0%,#172b3b 0,transparent 48%),var(--bg);color:var(--text);font:16px/1.5 Arial,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px}
+main{width:min(100%,460px)}.brand{text-align:center;margin-bottom:28px}.mark{width:58px;height:58px;border:1px solid #35d6a0;border-radius:18px;display:grid;place-items:center;margin:0 auto 14px;color:#35d6a0;font-size:28px;font-weight:800;box-shadow:0 0 32px #35d6a022}.brand h1{font-size:25px;letter-spacing:.4px;margin:0}.brand p{margin:6px 0 0;color:var(--muted);font-size:13px;letter-spacing:1.4px}
+.panel{background:#111923ed;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 24px 70px #0007}.panel h2{font-size:22px;margin:0 0 6px;text-align:center}.sub{color:var(--muted);text-align:center;margin:0 0 24px;font-size:14px}
+.methods{display:grid;gap:12px}.method{width:100%;display:flex;align-items:center;gap:14px;padding:15px;border:1px solid var(--line);border-radius:15px;background:#ffffff08;color:var(--text);text-align:left;cursor:pointer;transition:.18s;font:inherit}.method:hover,.method:focus-visible{border-color:#35d6a0;transform:translateY(-1px);outline:none}.logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:20px;font-weight:800;color:white;flex:none}.payme{background:#168bd2}.click{background:#1769c2}.paynet{background:#e5a12a}.uzum{background:#7042b8}.method strong{display:block;font-size:16px}.method small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.arrow{margin-left:auto;color:#9ba8b8;font-size:22px}
+.note{margin:20px 0 0;padding:12px 14px;background:#ffffff08;border-radius:12px;color:var(--muted);font-size:12px;text-align:center}.footer{text-align:center;color:#718093;font-size:12px;margin-top:20px}
+.dialog{display:none;position:fixed;inset:0;background:#000a;align-items:center;justify-content:center;padding:22px}.dialog.open{display:flex}.dialog-card{max-width:360px;width:100%;background:#17212d;border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}.dialog-card h3{margin:0 0 8px}.dialog-card p{color:var(--muted);font-size:14px}.close{border:0;background:#35d6a0;color:#07130f;border-radius:10px;padding:11px 20px;font-weight:700;cursor:pointer}
+@media(max-width:420px){body{padding:16px}.panel{padding:20px}.panel h2{font-size:20px}}
+</style>
+</head>
+<body>
+<main>
+ <header class="brand"><div class="mark">T</div><h1>Taplink Pay</h1><p>SMART PAYMENT EXPERIENCE</p></header>
+ <section class="panel">
+  <h2>Выберите способ оплаты</h2>
+  <p class="sub">Выберите удобную платёжную систему</p>
+  <div class="methods">
+   <button class="method" type="button" data-provider="Payme"><span class="logo payme">P</span><span><strong>Payme</strong><small>Оплата через Payme</small></span><span class="arrow">›</span></button>
+   <button class="method" type="button" data-provider="Click"><span class="logo click">C</span><span><strong>Click</strong><small>Оплата через Click</small></span><span class="arrow">›</span></button>
+   <button class="method" type="button" data-provider="Paynet"><span class="logo paynet">P</span><span><strong>Paynet</strong><small>Оплата через Paynet</small></span><span class="arrow">›</span></button>
+   <button class="method" type="button" data-provider="Uzum"><span class="logo uzum">U</span><span><strong>Uzum</strong><small>Оплата через Uzum</small></span><span class="arrow">›</span></button>
+  </div>
+  <p class="note">Платёжные переходы будут активированы после подключения официальных платёжных ссылок или мерчант-аккаунтов.</p>
+ </section>
+ <footer class="footer">© 2026 Taplinkuzb · Taplink Pay</footer>
+</main>
+<div class="dialog" id="dialog" role="dialog" aria-modal="true" aria-labelledby="dialogTitle">
+ <div class="dialog-card"><h3 id="dialogTitle">Способ оплаты выбран</h3><p id="dialogText">Этот способ оплаты пока не подключён. Скоро здесь появится переход к оплате.</p><button class="close" id="closeDialog" type="button">Понятно</button></div>
+</div>
+<script>
+const dialog=document.getElementById('dialog'),dialogText=document.getElementById('dialogText');
+document.querySelectorAll('[data-provider]').forEach(button=>button.addEventListener('click',()=>{dialogText.textContent='Вы выбрали '+button.dataset.provider+'. Платёжный переход появится после подключения официальной платёжной ссылки или мерчант-аккаунта.';dialog.classList.add('open');}));
+document.getElementById('closeDialog').addEventListener('click',()=>dialog.classList.remove('open'));
+dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.classList.remove('open')});
+document.addEventListener('keydown',event=>{if(event.key==='Escape')dialog.classList.remove('open')});
+</script>
+</body>
+</html>
