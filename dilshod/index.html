@@ -2,29 +2,29 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080510">
+<meta name="theme-color" content="#080407">
 <meta name="description" content="Персональная NFC-визитка Шавкатова Дильшода">
 <title>Шавкатов Дильшод — Digital Card</title>
 <style>
 *{box-sizing:border-box}
-:root{--pink:#c5a879;--violet:#71849a;--cyan:#d8c7a3}
-body{margin:0;min-height:100svh;display:grid;place-items:center;overflow-x:hidden;padding:28px 16px;background:#090b10;color:#fff;font-family:Arial,sans-serif;position:relative}
-body:before{content:"";position:fixed;inset:-25%;z-index:-2;background:radial-gradient(ellipse at 18% 22%,#9b795333,transparent 34%),radial-gradient(ellipse at 82% 30%,#52677b44,transparent 36%),radial-gradient(ellipse at 50% 90%,#8c6b4533,transparent 42%),repeating-linear-gradient(132deg,transparent 0 70px,#ffffff06 71px,#ffffff06 72px,transparent 73px 145px),linear-gradient(135deg,#090b10,#171a20 52%,#080a0e);animation:aurora 22s ease-in-out infinite alternate}
-body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.19;background-image:radial-gradient(#d8c7a322 .7px,transparent .8px);background-size:5px 5px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
+:root{--burgundy:#64152f;--wine:#8f2347;--rose:#c34b70;--glow:#ed668d}
+body{margin:0;min-height:100svh;display:grid;place-items:center;overflow-x:hidden;padding:28px 16px;background:#070507;color:#fff;font-family:Arial,sans-serif;position:relative}
+body:before{content:"";position:fixed;inset:-25%;z-index:-2;background:radial-gradient(ellipse at 18% 22%,#7b183b66,transparent 34%),radial-gradient(ellipse at 82% 30%,#3a0b1d88,transparent 36%),radial-gradient(ellipse at 50% 90%,#8b244544,transparent 42%),repeating-linear-gradient(132deg,transparent 0 70px,#ffffff05 71px,#ffffff05 72px,transparent 73px 145px),linear-gradient(135deg,#070507,#170910 52%,#050405);animation:aurora 22s ease-in-out infinite alternate}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.17;background-image:radial-gradient(#e66a8b22 .7px,transparent .8px);background-size:5px 5px;mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent)}
 @keyframes aurora{0%{transform:translate3d(-2%,0,0) rotate(0deg) scale(1)}100%{transform:translate3d(2%,-2%,0) rotate(5deg) scale(1.08)}}
-.orb{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(65px);opacity:.22;z-index:-1;pointer-events:none;animation:float 9s ease-in-out infinite alternate}
-.orb.one{background:#b08c5c;top:4%;left:-100px}.orb.two{background:#52677b;bottom:0;right:-110px;animation-delay:-4s}
+.orb{position:fixed;width:260px;height:260px;border-radius:50%;filter:blur(65px);opacity:.24;z-index:-1;pointer-events:none;animation:float 9s ease-in-out infinite alternate}
+.orb.one{background:#9b234b;top:4%;left:-100px}.orb.two{background:#581126;bottom:0;right:-110px;animation-delay:-4s}
 @keyframes float{to{transform:translate(55px,35px) scale(1.25)}}
-.card{width:min(100%,390px);padding:32px 25px 27px;text-align:center;position:relative;isolation:isolate;background:linear-gradient(155deg,rgba(13,10,31,.96),rgba(5,7,22,.96));border:1px solid #8d795d;border-radius:27px;box-shadow:0 18px 60px #000a,inset 0 0 28px #a58a5a12;backdrop-filter:blur(14px)}
-.card:before{content:"";position:absolute;inset:-2px;border-radius:29px;padding:1px;background:linear-gradient(135deg,#c7ad7b,#52677b,#e0d1b2,#8b7450);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.38}
-.avatar{width:174px;height:174px;margin:0 auto 23px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ff24c8,#7d35ff,#36eaff,#ff24c8);box-shadow:0 8px 30px #000b;animation:pulse 3s ease-in-out infinite}
-.avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;border:2px solid #10091d}
-@keyframes pulse{50%{box-shadow:0 10px 34px #000c}}
-h1{font-size:27px;margin:0;color:#e4d3b2;text-shadow:0 2px 16px #b79a6844;letter-spacing:.2px}
-.sub{margin:9px 0 27px;color:#c9b9d5;font-size:11px;letter-spacing:3px;text-transform:uppercase}
-.links{display:grid;gap:13px}.link{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 14px;border:1px solid #76644b;border-radius:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:2px;background:linear-gradient(100deg,#170d2b,#100c23);box-shadow:0 6px 20px #0008,inset 0 0 12px #bda47712;transition:transform .2s,box-shadow .2s,background .2s}.link:hover{transform:translateY(-3px);background:#272a2d;box-shadow:0 8px 22px #000b}.link span{font-size:19px;letter-spacing:0;color:#ff6bd8;text-shadow:0 0 9px #ff2ac2}
-.save{margin-top:20px;border:0;background:linear-gradient(90deg,#927b57,#c1a77b);color:white;border-radius:14px;padding:15px;width:100%;font-weight:700;letter-spacing:1px;box-shadow:0 8px 24px #0009;cursor:pointer;transition:transform .2s}.save:hover{transform:translateY(-2px)}
-.note{margin-top:20px;color:#9483a8;font-size:10px;letter-spacing:3px}
+.card{width:min(100%,390px);padding:32px 25px 27px;text-align:center;position:relative;isolation:isolate;background:linear-gradient(155deg,rgba(20,7,13,.97),rgba(7,5,8,.97));border:1px solid #68213b;border-radius:27px;box-shadow:0 18px 60px #000c,0 0 34px #8d204322,inset 0 0 28px #a12b4b18;backdrop-filter:blur(14px)}
+.card:before{content:"";position:absolute;inset:-2px;border-radius:29px;padding:1px;background:linear-gradient(135deg,#a63b5d,#421020,#d05a7a,#64152f);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.55}
+.avatar{width:174px;height:174px;margin:0 auto 23px;border-radius:50%;padding:5px;background:linear-gradient(135deg,#ed668d,#64152f,#a92e55,#ed668d);box-shadow:0 0 12px #e84b7b88,0 0 32px #8d204366;animation:pulse 3s ease-in-out infinite}
+.avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;border:2px solid #10070b}
+@keyframes pulse{50%{box-shadow:0 0 20px #ed668d99,0 0 42px #8d204388}}
+h1{font-size:27px;margin:0;color:#f3dce3;text-shadow:0 2px 16px #b63d6044;letter-spacing:.2px}
+.sub{margin:9px 0 27px;color:#c58b9d;font-size:11px;letter-spacing:3px;text-transform:uppercase}
+.links{display:grid;gap:13px}.link{display:flex;align-items:center;justify-content:center;gap:12px;padding:15px 14px;border:1px solid #74213e;border-radius:14px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;letter-spacing:2px;background:linear-gradient(100deg,#1c0911,#10070b);box-shadow:0 6px 20px #0009,inset 0 0 14px #b52e561c;transition:transform .2s,box-shadow .2s,background .2s}.link:hover{transform:translateY(-3px);background:linear-gradient(100deg,#35101f,#1b0911);box-shadow:0 8px 25px #000b,0 0 18px #b52e5644}.link span{font-size:19px;letter-spacing:0;color:#f06a91;text-shadow:0 0 10px #e33d70}
+.save{margin-top:20px;border:1px solid #a83b5d;background:linear-gradient(90deg,#5e142d,#982748);color:white;border-radius:14px;padding:15px;width:100%;font-weight:700;letter-spacing:1px;box-shadow:0 8px 24px #0009,0 0 18px #8d204333;cursor:pointer;transition:transform .2s}.save:hover{transform:translateY(-2px);box-shadow:0 8px 28px #000b,0 0 22px #b52e5655}
+.note{margin-top:20px;color:#a96a7e;font-size:10px;letter-spacing:3px}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -42,6 +42,6 @@ h1{font-size:27px;margin:0;color:#e4d3b2;text-shadow:0 2px 16px #b79a6844;letter
 <div class="note">TAP • CONNECT • SHARE</div>
 </main>
 <script>
-function saveContact(){const v='BEGIN:VCARD\nVERSION:3.0\nN:Шавкатов;Дильшод;;;\nFN:Шавкатов Дильшод\nTEL;TYPE=CELL:+998903222110\nURL:https://t.me/shavkatovv888\nEND:VCARD';const a=document.createElement('a');const u=URL.createObjectURL(new Blob([v],{type:'text/vcard;charset=utf-8'}));a.href=u;a.download='Dilshod-Shavkatov.vcf';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function saveContact(){const v='BEGIN:VCARD\\nVERSION:3.0\\nN:Шавкатов;Дильшод;;;\\nFN:Шавкатов Дильшод\\nTEL;TYPE=CELL:+998903222110\\nURL:https://t.me/shavkatovv888\\nEND:VCARD';const a=document.createElement('a');const u=URL.createObjectURL(new Blob([v],{type:'text/vcard;charset=utf-8'}));a.href=u;a.download='Dilshod-Shavkatov.vcf';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
 </script>
 </body></html>
